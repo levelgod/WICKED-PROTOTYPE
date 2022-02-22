@@ -160,7 +160,7 @@ var makeBSS = function (el, options) {
 };
 var opts = {
     auto : {
-        speed : 5000, 
+        speed : 4000, 
         pauseOnHover : true
     },
     fullScreen : true, 
@@ -170,3 +170,850 @@ makeBSS('.demo1', opts);
 
 // end of lp carousel
 
+
+
+
+
+
+var owl = $('.owl-carousel');
+owl.owlCarousel({
+    items:6, 
+  // items change number for slider display on desktop
+  
+    loop:true,
+    margin:10,
+    autoplay:true,
+    autoplayTimeout:4500,
+    autoplayHoverPause:true
+});
+
+
+
+// extra offer slider js 
+
+/* Slider (work in progress)
+ * 03/09/2015 by Andrew Errico
+ */
+
+
+// pc-wikoff-section
+
+
+
+
+
+
+$(function() {
+
+    // slider type
+    $t = "slide_wik"; // opitions are fade and slide
+    
+  	//variables
+    $f = 1000,  // fade in/out speed
+    $s = 1000,  // slide transition speed (for sliding carousel)
+    $d = 3000;  // duration per slide
+    
+    $n = $('.slide_wik').length; //number of slides
+    $w = $('.slide_wik').width(); // slide width
+  	$c = $('.container_wik').width(); // container width
+   	$ss = $n * $w; // slideshow width
+  
+  	
+      function timer() {
+        $('.timer_wik').animate({"width":$w}, $d);
+        $('.timer_wik').animate({"width":0}, 0);
+    }
+
+  
+  // fading function
+    function fadeInOut() {
+      timer();
+        $i = 0;    
+        var setCSS = {
+            'position' : 'absolute',
+            'top' : '0',
+            'left' : '0'
+        }        
+        
+        $('.slide').css(setCSS);
+        
+        //show first item
+        $('.slide').eq($i).show();
+        
+
+        setInterval(function() {
+          timer();
+            $('.slide_wik').eq($i).fadeOut($f);
+            if ($i == $n - 1) {
+                $i = 0;
+            } else {
+                $i++;
+            }
+            $('.slide_wik').eq($i).fadeIn($f, function() {
+                $('.timer_wik').css({'width' : '0'});
+            });
+
+        }, $d);
+        
+    }
+    
+    function slide() {
+      timer();
+        var setSlideCSS = {
+            'float' : 'left',
+            'display' : 'inline-block',
+          	'width' : $c
+        }
+        var setSlideShowCSS = {
+            'width' : $ss // set width of slideshow container
+        }
+        $('.slide_wik').css(setSlideCSS);
+        $('.slideshow_wik').css(setSlideShowCSS); 
+        
+        
+        setInterval(function() {
+            timer();
+            $('.slideshow_wik').animate({"left": -$w}, $s, function(){
+                // to create infinite loop
+                $('.slideshow_wik').css('left',0).append( $('.slide_wik:first'));
+            });
+        }, $d);
+        
+    }
+    
+    if ($t == "fade") {
+        fadeInOut();
+        
+    } if ($t == "slide_wik") {
+        slide();
+        
+    } else {
+      
+    }
+});
+
+// end of collections slide 1
+
+
+
+
+
+
+$(function() {
+
+    // slider type
+    $t = "slide_wikb"; // opitions are fade and slide
+    
+  	//variables
+    $f = 1000,  // fade in/out speed
+    $s = 1000,  // slide transition speed (for sliding carousel)
+    $d = 4000;  // duration per slide
+    
+    $n = $('.slide_wikb').length; //number of slides
+    $w = $('.slide_wikb').width(); // slide width
+  	$c = $('.container_wikb').width(); // container width
+   	$ss = $n * $w; // slideshow width
+  
+  	
+      function timer() {
+        $('.timer_wikb').animate({"width":$w}, $d);
+        $('.timer_wikb').animate({"width":0}, 0);
+    }
+
+  
+  // fading function
+    function fadeInOut() {
+      timer();
+        $i = 0;    
+        var setCSS = {
+            'position' : 'absolute',
+            'top' : '0',
+            'left' : '0'
+        }        
+        
+        $('.slide').css(setCSS);
+        
+        //show first item
+        $('.slide').eq($i).show();
+        
+
+        setInterval(function() {
+          timer();
+            $('.slide_wikb').eq($i).fadeOut($f);
+            if ($i == $n - 1) {
+                $i = 0;
+            } else {
+                $i++;
+            }
+            $('.slide_wikb').eq($i).fadeIn($f, function() {
+                $('.timer_wikb').css({'width' : '0'});
+            });
+
+        }, $d);
+        
+    }
+    
+    function slide() {
+      timer();
+        var setSlideCSS = {
+            'float' : 'left',
+            'display' : 'inline-block',
+          	'width' : $c
+        }
+        var setSlideShowCSS = {
+            'width' : $ss // set width of slideshow container
+        }
+        $('.slide_wikb').css(setSlideCSS);
+        $('.slideshow_wikb').css(setSlideShowCSS); 
+        
+        
+        setInterval(function() {
+            timer();
+            $('.slideshow_wikb').animate({"left": -$w}, $s, function(){
+                // to create infinite loop
+                $('.slideshow_wikb').css('left',0).append( $('.slide_wikb:first'));
+            });
+        }, $d);
+        
+    }
+    
+    if ($t == "fade") {
+        fadeInOut();
+        
+    } if ($t == "slide_wikb") {
+        slide();
+        
+    } else {
+      
+    }
+});
+
+// end of collections slide 2
+
+
+
+
+
+
+
+
+$(function() {
+
+    // slider type
+    $t = "slide_wikc"; // opitions are fade and slide
+    
+  	//variables
+    $f = 1000,  // fade in/out speed
+    $s = 1000,  // slide transition speed (for sliding carousel)
+    $d = 3500;  // duration per slide
+    
+    $n = $('.slide_wikc').length; //number of slides
+    $w = $('.slide_wikc').width(); // slide width
+  	$c = $('.container_wikc').width(); // container width
+   	$ss = $n * $w; // slideshow width
+  
+  	
+      function timer() {
+        $('.timer_wikc').animate({"width":$w}, $d);
+        $('.timer_wikc').animate({"width":0}, 0);
+    }
+
+  
+  // fading function
+    function fadeInOut() {
+      timer();
+        $i = 0;    
+        var setCSS = {
+            'position' : 'absolute',
+            'top' : '0',
+            'left' : '0'
+        }        
+        
+        $('.slide').css(setCSS);
+        
+        //show first item
+        $('.slide').eq($i).show();
+        
+
+        setInterval(function() {
+          timer();
+            $('.slide_wikc').eq($i).fadeOut($f);
+            if ($i == $n - 1) {
+                $i = 0;
+            } else {
+                $i++;
+            }
+            $('.slide_wikc').eq($i).fadeIn($f, function() {
+                $('.timer_wikc').css({'width' : '0'});
+            });
+
+        }, $d);
+        
+    }
+    
+    function slide() {
+      timer();
+        var setSlideCSS = {
+            'float' : 'left',
+            'display' : 'inline-block',
+          	'width' : $c
+        }
+        var setSlideShowCSS = {
+            'width' : $ss // set width of slideshow container
+        }
+        $('.slide_wikc').css(setSlideCSS);
+        $('.slideshow_wikc').css(setSlideShowCSS); 
+        
+        
+        setInterval(function() {
+            timer();
+            $('.slideshow_wikc').animate({"left": -$w}, $s, function(){
+                // to create infinite loop
+                $('.slideshow_wikc').css('left',0).append( $('.slide_wikc:first'));
+            });
+        }, $d);
+        
+    }
+    
+    if ($t == "fade") {
+        fadeInOut();
+        
+    } if ($t == "slide_wikc") {
+        slide();
+        
+    } else {
+      
+    }
+});
+
+// end of collections slide 3
+
+
+
+
+
+$(function() {
+
+    // slider type
+    $t = "slide_wikd"; // opitions are fade and slide
+    
+  	//variables
+    $f = 1000,  // fade in/out speed
+    $s = 1000,  // slide transition speed (for sliding carousel)
+    $d = 5000;  // duration per slide
+    
+    $n = $('.slide_wikd').length; //number of slides
+    $w = $('.slide_wikd').width(); // slide width
+  	$c = $('.container_wikd').width(); // container width
+   	$ss = $n * $w; // slideshow width
+  
+  	
+      function timer() {
+        $('.timer_wikd').animate({"width":$w}, $d);
+        $('.timer_wikd').animate({"width":0}, 0);
+    }
+
+  
+  // fading function
+    function fadeInOut() {
+      timer();
+        $i = 0;    
+        var setCSS = {
+            'position' : 'absolute',
+            'top' : '0',
+            'left' : '0'
+        }        
+        
+        $('.slide').css(setCSS);
+        
+        //show first item
+        $('.slide').eq($i).show();
+        
+
+        setInterval(function() {
+          timer();
+            $('.slide_wikd').eq($i).fadeOut($f);
+            if ($i == $n - 1) {
+                $i = 0;
+            } else {
+                $i++;
+            }
+            $('.slide_wikd').eq($i).fadeIn($f, function() {
+                $('.timer_wikd').css({'width' : '0'});
+            });
+
+        }, $d);
+        
+    }
+    
+    function slide() {
+      timer();
+        var setSlideCSS = {
+            'float' : 'left',
+            'display' : 'inline-block',
+          	'width' : $c
+        }
+        var setSlideShowCSS = {
+            'width' : $ss // set width of slideshow container
+        }
+        $('.slide_wikd').css(setSlideCSS);
+        $('.slideshow_wikd').css(setSlideShowCSS); 
+        
+        
+        setInterval(function() {
+            timer();
+            $('.slideshow_wikd').animate({"left": -$w}, $s, function(){
+                // to create infinite loop
+                $('.slideshow_wikd').css('left',0).append( $('.slide_wikd:first'));
+            });
+        }, $d);
+        
+    }
+    
+    if ($t == "fade") {
+        fadeInOut();
+        
+    } if ($t == "slide_wikd") {
+        slide();
+        
+    } else {
+      
+    }
+});
+
+// end of collections slide 4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// mobile section landing page
+
+
+$(function() {
+
+    // slider type
+    $t = "slide_lp"; // opitions are fade and slide
+    
+  	//variables
+    $f = 1000,  // fade in/out speed
+    $s = 1000,  // slide transition speed (for sliding carousel)
+    $d = 5000;  // duration per slide
+    
+    $n = $('.slide_lp').length; //number of slides
+    $w = $('.slide_lp').width(); // slide width
+  	$c = $('.container_lp').width(); // container width
+   	$ss = $n * $w; // slideshow width
+  
+  	
+      function timer() {
+        $('.timer_lp').animate({"width":$w}, $d);
+        $('.timer_lp').animate({"width":0}, 0);
+    }
+
+  
+  // fading function
+    function fadeInOut() {
+      timer();
+        $i = 0;    
+        var setCSS = {
+            'position' : 'absolute',
+            'top' : '0',
+            'left' : '0'
+        }        
+        
+        $('.slide').css(setCSS);
+        
+        //show first item
+        $('.slide').eq($i).show();
+        
+
+        setInterval(function() {
+          timer();
+            $('.slide_lp').eq($i).fadeOut($f);
+            if ($i == $n - 1) {
+                $i = 0;
+            } else {
+                $i++;
+            }
+            $('.slide_lp').eq($i).fadeIn($f, function() {
+                $('.timer_lp').css({'width' : '0'});
+            });
+
+        }, $d);
+        
+    }
+    
+    function slide() {
+      timer();
+        var setSlideCSS = {
+            'float' : 'left',
+            'display' : 'inline-block',
+          	'width' : $c
+        }
+        var setSlideShowCSS = {
+            'width' : $ss // set width of slideshow container
+        }
+        $('.slide_lp').css(setSlideCSS);
+        $('.slideshow_lp').css(setSlideShowCSS); 
+        
+        
+        setInterval(function() {
+            timer();
+            $('.slideshow_lp').animate({"left": -$w}, $s, function(){
+                // to create infinite loop
+                $('.slideshow_lp').css('left',0).append( $('.slide_wik:first'));
+            });
+        }, $d);
+        
+    }
+    
+    if ($t == "fade") {
+        fadeInOut();
+        
+    } if ($t == "slide_lp") {
+        slide();
+        
+    } else {
+      
+    }
+});
+
+
+
+
+
+
+
+
+
+// mobile m_men div section
+
+
+$(function() {
+
+    // slider type
+    $t = "slide_men"; // opitions are fade and slide
+    
+  	//variables
+    $f = 1000,  // fade in/out speed
+    $s = 1000,  // slide transition speed (for sliding carousel)
+    $d = 6000;  // duration per slide
+    
+    $n = $('.slide_men').length; //number of slides
+    $w = $('.slide_men').width(); // slide width
+  	$c = $('.container_men').width(); // container width
+   	$ss = $n * $w; // slideshow width
+  
+  	
+      function timer() {
+        $('.timer_men').animate({"width":$w}, $d);
+        $('.timer_men').animate({"width":0}, 0);
+    }
+
+  
+  // fading function
+    function fadeInOut() {
+      timer();
+        $i = 0;    
+        var setCSS = {
+            'position' : 'absolute',
+            'top' : '0',
+            'left' : '0'
+        }        
+        
+        $('.slide').css(setCSS);
+        
+        //show first item
+        $('.slide').eq($i).show();
+        
+
+        setInterval(function() {
+          timer();
+            $('.slide_men').eq($i).fadeOut($f);
+            if ($i == $n - 1) {
+                $i = 0;
+            } else {
+                $i++;
+            }
+            $('.slide_men').eq($i).fadeIn($f, function() {
+                $('.timer_men').css({'width' : '0'});
+            });
+
+        }, $d);
+        
+    }
+    
+    function slide() {
+      timer();
+        var setSlideCSS = {
+            'float' : 'left',
+            'display' : 'inline-block',
+          	'width' : $c
+        }
+        var setSlideShowCSS = {
+            'width' : $ss // set width of slideshow container
+        }
+        $('.slide_men').css(setSlideCSS);
+        $('.slideshow_men').css(setSlideShowCSS); 
+        
+        
+        setInterval(function() {
+            timer();
+            $('.slideshow_men').animate({"left": -$w}, $s, function(){
+                // to create infinite loop
+                $('.slideshow_men').css('left',0).append( $('.slide_men:first'));
+            });
+        }, $d);
+        
+    }
+    
+    if ($t == "fade") {
+        fadeInOut();
+        
+    } if ($t == "slide_men") {
+        slide();
+        
+    } else {
+      
+    }
+});
+
+
+
+
+
+
+
+// mobile fashion lady section
+
+
+
+
+$(function() {
+
+    // slider type
+    $t = "slide_lady"; // opitions are fade and slide
+    
+  	//variables
+    $f = 1000,  // fade in/out speed
+    $s = 1000,  // slide transition speed (for sliding carousel)
+    $d = 11000;  // duration per slide
+    
+    $n = $('.slide_lady').length; //number of slides
+    $w = $('.slide_lady').width(); // slide width
+  	$c = $('.container_lady').width(); // container width
+   	$ss = $n * $w; // slideshow width
+  
+  	
+      function timer() {
+        $('.timer_lady').animate({"width":$w}, $d);
+        $('.timer_lady').animate({"width":0}, 0);
+    }
+
+  
+  // fading function
+    function fadeInOut() {
+      timer();
+        $i = 0;    
+        var setCSS = {
+            'position' : 'absolute',
+            'top' : '0',
+            'left' : '0'
+        }        
+        
+        $('.slide_lady').css(setCSS);
+        
+        //show first item
+        $('.slide_lady').eq($i).show();
+        
+
+        setInterval(function() {
+          timer();
+            $('.slide_lady').eq($i).fadeOut($f);
+            if ($i == $n - 1) {
+                $i = 0;
+            } else {
+                $i++;
+            }
+            $('.slide_lady').eq($i).fadeIn($f, function() {
+                $('.timer_lady').css({'width' : '0'});
+            });
+
+        }, $d);
+        
+    }
+    
+    function slide() {
+      timer();
+        var setSlideCSS = {
+            'float' : 'left',
+            'display' : 'inline-block',
+          	'width' : $c
+        }
+        var setSlideShowCSS = {
+            'width' : $ss // set width of slideshow container
+        }
+        $('.slide_lady').css(setSlideCSS);
+        $('.slideshow_lady').css(setSlideShowCSS); 
+        
+        
+        setInterval(function() {
+            timer();
+            $('.slideshow_lady').animate({"left": -$w}, $s, function(){
+                // to create infinite loop
+                $('.slideshow_lady').css('left',0).append( $('.slide_lady:first'));
+            });
+        }, $d);
+        
+    }
+    
+    if ($t == "fade") {
+        fadeInOut();
+        
+    } if ($t == "slide_lady") {
+        slide();
+        
+    } else {
+      
+    }
+});
+
+
+
+
+
+
+
+
+// Hamburger menu 
+
+
+// Get Modal
+var modal = document.getElementById('myModal');
+    
+// Get pseudoelement to open Modal
+var btn = document.getElementById("sized");
+
+// Get the <span> element to close Modal
+var span = document.getElementsByClassName("close")[0];
+
+// When user clicks button, open Modal
+btn.onclick = function() {
+   modal.style.display = "block";
+   };
+
+// When user clicks Close (x), close Modal
+span.onclick = function() {
+   modal.style.display = "none";
+   };
+
+// When user clicks anywhere outside of the Modal, close Modal
+ window.onclick = function(event) {
+    if (event.target == modal) {
+       modal.style.display = "none";
+       }
+    }
+
+
+
+    // mobile social section
+
+    
+$(function() {
+
+    // slider type
+    $t = "slide_sl"; // opitions are fade and slide
+    
+  	//variables
+    $f = 1000,  // fade in/out speed
+    $s = 1000,  // slide transition speed (for sliding carousel)
+    $d = 4000;  // duration per slide
+    
+    $n = $('.slide_sl').length; //number of slides
+    $w = $('.slide_sl').width(); // slide width
+  	$c = $('.container_sl').width(); // container width
+   	$ss = $n * $w; // slideshow width
+  
+  	
+      function timer() {
+        $('.timer_sl').animate({"width":$w}, $d);
+        $('.timer_sl').animate({"width":0}, 0);
+    }
+
+  
+  // fading function
+    function fadeInOut() {
+      timer();
+        $i = 0;    
+        var setCSS = {
+            'position' : 'absolute',
+            'top' : '0',
+            'left' : '0'
+        }        
+        
+        $('.slide_sl').css(setCSS);
+        
+        //show first item
+        $('.slide_sl').eq($i).show();
+        
+
+        setInterval(function() {
+          timer();
+            $('.slide_sl').eq($i).fadeOut($f);
+            if ($i == $n - 1) {
+                $i = 0;
+            } else {
+                $i++;
+            }
+            $('.slide_sl').eq($i).fadeIn($f, function() {
+                $('.timer_sl').css({'width' : '0'});
+            });
+
+        }, $d);
+        
+    }
+    
+    function slide() {
+      timer();
+        var setSlideCSS = {
+            'float' : 'left',
+            'display' : 'inline-block',
+          	'width' : $c
+        }
+        var setSlideShowCSS = {
+            'width' : $ss // set width of slideshow container
+        }
+        $('.slide_sl').css(setSlideCSS);
+        $('.slideshow_sl').css(setSlideShowCSS); 
+        
+        
+        setInterval(function() {
+            timer();
+            $('.slideshow_sl').animate({"left": -$w}, $s, function(){
+                // to create infinite loop
+                $('.slideshow_sl').css('left',0).append( $('.slide_sl:first'));
+            });
+        }, $d);
+        
+    }
+    
+    if ($t == "fade") {
+        fadeInOut();
+        
+    } if ($t == "slide_sl") {
+        slide();
+        
+    } else {
+      
+    }
+});

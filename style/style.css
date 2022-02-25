@@ -37,6 +37,47 @@
     outline: none;
   }
 
+
+  /* custom scroll bar  */
+
+
+  /* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 2px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red; 
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #77840a; 
+}
+
+
+
+
+
+
+
+/* custom scroll bar end  */
+
+
+
+
+
+
+
+
   /* css for mobile only */
   .m_nav_bar{
     width: 100%;
@@ -379,10 +420,6 @@ hr {
   height: 150vw;
   overflow: hidden;
 }
-.slideshow_lp {
-  position: relative;
-  height: 100%;
-}
 .slide_lp {
   width: 100%;
   height: 150vw;
@@ -392,6 +429,15 @@ hr {
   background-size: contain;
   background-repeat: no-repeat;
   }
+
+
+
+
+
+
+
+
+
 /* START OF OFFER SEC */
 .offer_sec{
   width: 100%;
@@ -558,52 +604,106 @@ hr {
 }
 
 /* fashion lady starts here */
-/* .fashion_lady{
-  position: relative;
-}
-.fashion_lady img{
-  width: 100%;
-  height: auto;
-} */
-
 
 
 .fashion_lady{
-  height: 166.667vw;
+  height: 148vw;
   width: 100%;
   padding-top: 30px;
 }
 .fashion_lady img{
   background-size: cover;
   background-repeat: no-repeat;
-  height: 166.667vw;
+  height: 148vw;
   width: 100%;
 }
 .container_lady {
   width: 100%;
-  height: 166.667vw;
+  height: 148vw;
   overflow: hidden;
-}
-.slideshow_lady {
-  position: relative;
-  height: 100%;
 }
 .slide_lady {
   width: 100%;
-  height: 166.667vw;
+  height: 148vw;
   background: #bbb;
   color:#ddd;
   text-align: center;
   background-size: contain;
   background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
   }
+.lady-fstext{
+  top: 80%;
+  width: 100%;
+  height: 36px;
+  position: absolute;
+  background-color: #000000;
+  opacity: 72%;
+}
+.lady-fstext p{
+  margin-top: 2px;
+  margin-bottom: 2px;
+  font-size: 25px;
+  color: #ffff;
+}
 
-.fs_innerdiv h5{
-  color: #fff;
+.view-lady{
+  text-align: center;
 }
-.fs_innerdiv p{
-  color: #fff;
+
+.first-lady{
+  width: 100%;
+  height: 148vw;
+  background-color: green;
+  margin-top: 2px;
 }
+.first-lady img{
+  height: 148vw;
+  width: 100%;
+}
+.second-lady{
+  width: 100%;
+  height: 148vw;
+  margin-top: 2px;
+}
+.second-lady img{
+  height: 148vw;
+  width: 100%;
+}
+.third-lady{
+  width: 100%;
+  height: 148vw;
+  margin-top: 2px;
+
+}
+.third-lady img{
+  width: 100%;
+  height: 148vw;
+}
+.fourth-lady{
+  width: 100%;
+  height: 148vw;
+  margin-top: 2px;
+}
+.fourth-lady img{
+  width: 100%;
+  height: 148vw;
+}
+.fifth-lady{
+  width: 100%;
+  height: 148vw;
+  margin-top: 2px;
+}
+.fifth-lady img{
+  width: 100%;
+  height: 148vw;
+}
+
+#show-hidden-lady{
+  background-color: #f3f3f3;
+}
+
 /* end of fashion lady sec */
 
 /* shop now */
@@ -743,6 +843,7 @@ hr {
   background-repeat: no-repeat;
   height: 119vw;
   width: 100%;
+  position: relative;
 }
 .container_sl {
   width: 100%;
@@ -763,41 +864,20 @@ hr {
   background-repeat: no-repeat;
   }
 
-
-  .msocial-hover-div{
-    margin: auto;
-    bottom: -128px;
-    width: 260px;
-    height: 165px;
-    margin-top: 20px;
-  }
-  
-  .msocial:hover .msocial-hover-div{
-    margin: auto;
-    bottom: -128px;
-    transition: 0.3s;
-  }
-  .msocial-links{
-    background:#ffffffb6;
-  }
-  .msocial-hover-div p{
-    text-align: center !important;
-    color: #4c4c4c;
-    font-size: 0.8rem;
-    padding: 2px 0 2px 0;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
+.msocial-links{
+  position: absolute;
+  bottom: -112px;
+  width: 360px;
+  height: 165px;
+  background:#ff48009c;
+  padding: 40px 0 40px 0;
+}
+.msocial-links p{
+  text-align: center !important;
+  color: #ffffff;
+  font-size: 1.2rem;
+  padding: 2px 0 2px 0;
+}
 
 
 
@@ -855,6 +935,9 @@ hr {
   margin-top: 30px;
   margin-bottom: 15px;
 }
+.footer_div_in ul li{
+  padding: 5px;
+}
 .footer_div_in ul li a{
   color: #fff;
   font-size: 0.7rem;
@@ -906,8 +989,7 @@ hr {
   font-weight: lighter;
 }
 .copy-right{
-  margin-top: 30px;
-  color: #919191;
+  margin-top: 30px; 
   margin: auto;
   padding: 30px 0 10px 0;
 }
@@ -915,6 +997,8 @@ hr {
   font-family: 'Be Vietnam Pro', sans-serif;
   font-weight: lighter;
   text-align: center;
+  color: #ffffff;
+  font-size: 9px;
 }
 .pc_parent{
   display: none;
@@ -1002,6 +1086,12 @@ hr {
 .nav-link:hover {
   color: #fff;
 }
+.nav-outlet{
+ color: #c53800;
+}
+.nav-outlet:hover{
+  color: #ff4800;
+ }
 .nav-wrapper{
   width: 100%;
   height: auto;
@@ -1984,11 +2074,48 @@ hr {
 
 .container-offer {
   width: 100%;
-  height: 320px;
+  height: 400px;
   background-color: gray;
   margin-top: 30px;
 }
-
+.bg-video-wrap {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 400px;
+}
+.container-offer video{
+  width: 100%;
+  max-width: 960px;
+}
+video {
+  min-width: 100%;
+  z-index: 1;
+}
+.overlay {
+  width: 100%;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(45deg, rgba(255, 0, 0, 0.2) 50%, rgba(0, 106, 255, 0.2) 50%);
+  background-size: 3px 3px;
+  z-index: 1;
+}
+h1 {
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 3;
+  max-width: 400px;
+  width: 100%;
+  height: 50px;
+}
 
 /* end of slider js */
 
@@ -2169,7 +2296,7 @@ hr {
 
 .pc_sneakers_div{
   width: 100%;
-  height: 387px;
+  height: 240px;
   display: flex; 
 }
 .pc_sneak_cont{
@@ -2178,8 +2305,8 @@ hr {
   width: 207px;
 }
 .pc_sneak_cont img{
-  width: 130px;
-  height: 60px;
+  width: 169px;
+  height: 78px;
   margin-left: 15px;
   transition: 0.1s;
 }
@@ -2216,23 +2343,45 @@ hr {
   text-align: center;
 }
 
-.pc-view-more a{
-  font-size: 1rem;
-  font-family: 'Be Vietnam Pro', sans-serif;
-  color: #181818;
-  font-weight: 600;
+
+.first-div{
+  width: 100%;
+  height: 240px;
+}
+.second-div{
+  width: 100%;
+  height: 240px;
+}
+.third-div{
+  width: 100%;
+  height: 240px;
+  
 }
 
+#show-hidden-menu{
+  cursor: pointer;
+  background-color: #f3f3f3;
+  transition: 40ms;
+  margin-bottom: 70px;
 
-
-
-
-
+}
+#show-hidden-menu:hover{
+  background-color: #d6d6d6;
+  transition: 40ms;
+}
 /* start of pc sneak line */
 .pc_sneak_line{
 width: 100%;
  height: 1px;
  background-color: #dfdfdf 
+}
+#show-hidden-menu p{
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+#show-hidden-menu p:hover{
+  font-weight: bold;
+  color: #000000;
 }
 
 /* end of pc sneak line */
@@ -2281,7 +2430,7 @@ width: 100%;
   position: relative;
 }
 .fan-img img{
-  width: 240px!important;
+  width: 240px;
   margin-top: 30px;
   transform: scale(1.2);
 	-webkit-transition: .3s ease-in-out;
@@ -2302,15 +2451,16 @@ width: 100%;
 
 .owl-item:hover .fan-hover-div{
   margin: auto;
-  bottom: -128px;
+  bottom: -80px;
   transition: 0.3s;
 }
 .fan-links{
-  background:#ffffffb6;
+  background:#ff48009c;
+  padding: 20px 0 20px 0;
 }
 .fan-hover-div p{
   text-align: center !important;
-  color: #4c4c4c;
+  color: #ffffff;
   font-size: 0.8rem;
   padding: 2px 0 2px 0;
 }
@@ -2515,9 +2665,17 @@ font-weight: lighter;
   color: #fff;
   padding-top: 8px;
 }
+.pc-ind{
+  display: flex;
+}
 .pc-ind img{
   width: 30px;
   height: 20px;
+}
+.pc-ind p{
+  color: #ffff;
+  font-family: 'Be Vietnam Pro';
+  font-size: 13px;
 }
 .pc-policy{
   padding-top: 22px;
@@ -2563,14 +2721,45 @@ font-weight: lighter;
   bottom: 0;
   height: 250px;
   width: 100%;
-  background-image: url(../images/paral.jpg);
+  /* background-image: url(../images/paral.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 80% 22%;
+  background-position: 80% 22%; */
+}
+
+.wrapper {
+  animation: scroll 3000s linear infinite;
+  background: url("../images/paral.jpg"), #111111;
+  background-size: contain;
+  background-repeat: repeat-y;
+  color: #eee;
+  height: 132vh;
+  min-width: 960px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  perspective: 100px;
+  perspective-origin: 50% 50%;
+  
+}
+
+@keyframes scroll {
+   100%{
+    background-position:0px -9000px;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .wrapper {
+    animation: scroll 200s linear infinite;
+  }
 }
 
 
-
+.wrapper h2{
+  transition: 2s;
+  margin-left: 25px;
+}
 
 
 

@@ -753,31 +753,75 @@ $(function() {
 // Hamburger menu 
 
 
-// Get Modal
-var modal = document.getElementById('myModal');
-    
-// Get pseudoelement to open Modal
-var btn = document.getElementById("sized");
 
-// Get the <span> element to close Modal
-var span = document.getElementsByClassName("close")[0];
+ const menu = document.querySelector(".menum");
+ const menuMain = menu.querySelector(".menu-mainm");
+ const goBack = menu.querySelector(".go-backm");
+ const menuTrigger = document.querySelector(".mobile-menu-triggerm");
+ const closeMenu = menu.querySelector(".mobile-menu-closem");
+ let subMenu;
+ menuMain.addEventListener("click", (e) =>{
+ 	if(!menu.classList.contains("active")){
+ 		return;
+ 	}
+   if(e.target.closest(".menu-item-has-childrenm")){
+   	 const hasChildren = e.target.closest(".menu-item-has-childrenm");
+      showSubMenu(hasChildren);
+   }
+ });
+ goBack.addEventListener("click",() =>{
+ 	 hideSubMenu();
+ })
+ menuTrigger.addEventListener("click",() =>{
+ 	 toggleMenu();
+ })
+ closeMenu.addEventListener("click",() =>{
+ 	 toggleMenu();
+ })
+ document.querySelector(".menu-overlaym").addEventListener("click",() =>{
+ 	toggleMenu();
+ })
+ function toggleMenu(){
+ 	menu.classList.toggle("active");
+ 	document.querySelector(".menu-overlaym").classList.toggle("active");
+ }
+ function showSubMenu(hasChildren){
+    subMenu = hasChildren.querySelector(".sub-menum");
+    subMenu.classList.add("active");
+    subMenu.style.animation = "slideLeft 0.5s ease forwards";
+    const menuTitle = hasChildren.querySelector("i").parentNode.childNodes[0].textContent;
+    menu.querySelector(".current-menu-titlem").innerHTML=menuTitle;
+    menu.querySelector(".mobile-menu-headm").classList.add("active");
+ }
 
-// When user clicks button, open Modal
-btn.onclick = function() {
-   modal.style.display = "block";
-   };
+ function  hideSubMenu(){  
+    subMenu.style.animation = "slideRight 0.5s ease forwards";
+    setTimeout(() =>{
+       subMenu.classList.remove("active");	
+    },300); 
+    menu.querySelector(".current-menu-titlem").innerHTML="";
+    menu.querySelector(".mobile-menu-headm").classList.remove("active");
+ }
+ 
+ window.onresize = function(){
+ 	if(this.innerWidth >991){
+ 		if(menu.classList.contains("active")){
+ 			toggleMenu();
+ 		}
 
-// When user clicks Close (x), close Modal
-span.onclick = function() {
-   modal.style.display = "none";
-   };
+ 	}
+ }
 
-// When user clicks anywhere outside of the Modal, close Modal
- window.onclick = function(event) {
-    if (event.target == modal) {
-       modal.style.display = "none";
-       }
-    }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -873,5 +917,16 @@ $(function() {
     }
 });
 
+// nav bar scroll to toggle hide 
 
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("nav-wrapper").style.top = "0";
+  } else {
+    document.getElementById("nav-wrapper").style.top = "-80px";
+  }
+  prevScrollpos = currentScrollPos;
+}
 

@@ -66,18 +66,9 @@ button {
 ::-webkit-scrollbar-thumb:hover {
     background: #000000;
 }
-
-
-
-
-
-
-
 /* custom scroll bar end  */
 
 /* mobile logo and navigation bar  */
-
-
 
 .rowm {
     display: flex;
@@ -1490,7 +1481,69 @@ hr {
 }
 
 
+
+
+
+/* end of mobile home page */
+
+
+
+/* start of mobile text page */
+
+
+
+
+.m-test-div{
+    width: 100%;
+    height: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* end of mobile view */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (min-width: 960px) {
     .mobile_parent {
         display: none;
@@ -1503,34 +1556,25 @@ hr {
 
     .up_sec {
         width: 100%;
-        height: 24px;
-        background-color: black;
+        height: 27px;
+        background-color:#f5f5f5;
     }
 
     .searchbar-sec {
         float: right;
-        display: flex;
         margin-right: 60px;
+        margin-top: 4px;
     }
 
     .pc-sgnup p a {
-        color: #fff;
-        font-size: 0.8rem;
+        color: #111;
+        font-size: 0.72rem;
         font-weight: 400;
-        transition: 0.1s;
+        padding: 4px 8px;
     }
 
     .pc-sgnup p a:hover {
-        color: #ff4800;
-        transition: 0.1s;
-    }
-
-
-    /* Underline starts here */
-    .nav-ulbd {
-        width: 100%;
-        height: 1px;
-        background-color: #400000;
+        color: #8d8d8d;
     }
 
     /* navigation bar for pc */
@@ -1598,16 +1642,16 @@ hr {
     }
 
     .nav-link::before {
-        transition: 300ms;
-        height: 2px;
+        transition: 400ms;
+        height: 4px;
         content: "";
         position: absolute;
-        background-color: #ff4800;
+        background-color: #3a3a3a34;
     }
 
     .nav-link-ltr::before {
         width: 0%;
-        bottom: 12px;
+        bottom: 7px;
     }
 
     .nav-link-ltr:hover::before {
@@ -1655,7 +1699,7 @@ a {
     position: relative;
     z-index: 99;
     height: 52px;
-    background-color: #000000;
+    background-color: #ffffff;
 }
 .header .item-left {
     flex: 0 0 17%;
@@ -1679,7 +1723,7 @@ a {
 .header .item-right a {
     text-decoration: none;
     font-size: 16px;
-    color: #ffffff;
+    color: #8b8b8b;
     display: inline-block;
     margin-left: 10px;
     transition: color 0.3s ease;
@@ -1692,10 +1736,9 @@ a {
 }
 
 .header .menu>ul>li>a {
-    font-family: 'Teko';
-    font-size: 1.3rem;
-    font-weight: 400;
-    color: #e7e7e7;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #292929;
     position: relative;
     text-transform: capitalize;
 }
@@ -1791,10 +1834,10 @@ a {
 .header .menu>ul>li .sub-menu>ul>li>a:hover,
 .header ,
 .header .menu>ul>li:hover>a {
-    color: #ffffff;
+    color: #5e5e5e;
 }
 .item-right a:hover{
-    color: #ff4800;
+    color: #000000;
 }
 
 
@@ -2200,8 +2243,6 @@ a {
     }
 
     .adimga {
-        height: auto;
-        width: 16.667vw;
         display: inline-block;
         top: 6px;
         left: 0px;
@@ -2252,8 +2293,6 @@ a {
 
 
     .adimgb {
-        height: auto;
-        width: 16.667vw;
         display: inline-block;
         top: 81px;
         left: 118px;
@@ -2300,8 +2339,6 @@ a {
     }
 
     .adimgc {
-        height: auto;
-        width: 16.667vw;
         display: inline-block;
         top: 164px;
         left: 240px;
@@ -3371,7 +3408,7 @@ a {
     .pc-foot {
         width: 100%;
         height: auto;
-        background-color: #000000;
+        background-color: #111;
 
     }
 
@@ -3404,79 +3441,73 @@ a {
         font-size: 1rem;
         font-family: 'Be Vietnam Pro';
         font-weight: normal;
-        color: #dfdfdf;
+        color: #ffffff;
     }
 
-    .pc-details ul {
+    .pc-details ul li{
         margin-top: 5px;
+        padding: 2px 0 2px 0;
     }
 
     .pc-details a {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         font-family: 'Be Vietnam Pro';
-        font-weight: lighter;
+        font-weight: 300;
+        color: #a1a1a1;
     }
 
     .pc-details a:hover {
-        color: #ff4800;
+        color: #ffffff;
     }
 
     .ind-n-policy-wrap {
         width: 100%;
         height: 86px;
-        background-color: #000000;
+        background-color: #111;
     }
 
-
+/* pc social media icons  */
     .pc-social-links-div {
         height: auto;
         width: 100%;
-        background-color: #000000;
+        background-color: #111;
         padding-bottom: 8px;
+        display: flex;
+            justify-content: flex-end;
     }
 
     .pc-social-wrap {
-        width: 16%;
-        height: 48px;
-        display: flex;
-        margin-left: 72.917vw;
-        justify-content: space-around;
+        width: 30%;
     }
+.icons {
+    text-align: center;
 
-    .pc-social-links img {
-        height: 32px;
-        width: 32px;
-        opacity: 50%;
-        height: 20px;
-        width: 20px;
-    }
+}
 
-    .pc-social-links img:hover {
-        opacity: 80%;
-    }
+.icons i {
+    color: #00091B;
+    background: #919191;
+    height: 16px;
+    width: 16px;
+    border-radius: 50px;
+    padding: 6px;
+    margin: 0 10px;
+    border: 2px solid #919191;
+    transition: all 200ms ease;
+    text-decoration: none;
+    position: relative;
+}
 
+.icons i:hover,
+.icons i:active {
+    color: #fff;
+    background: none;
+    cursor: pointer !important;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    text-decoration: none;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 
@@ -3485,7 +3516,7 @@ a {
     .pol-line {
         width: 100%;
         height: 1px;
-        background-color: #400000;
+        background-color: #242424;
     }
 
     .ind-n-policy {
@@ -3520,10 +3551,11 @@ a {
     }
 
     .pc-policy a {
-        color: #b5b5b5;
+        color: #949494;
         font-family: 'Be Vietnam Pro';
         font-size: 0.78rem;
         font-weight: lighter;
+        padding: 4px 8px;
     }
 
     .pc-policy a:hover {
@@ -3537,7 +3569,7 @@ a {
     }
 
     .copy-right p {
-        color: #fff;
+        color: #949494;
         font-family: 'Be Vietnam Pro';
         font-size: 0.78rem;
         font-weight: lighter;
@@ -3563,10 +3595,6 @@ a {
         bottom: 0;
         height: 250px;
         width: 100%;
-        /* background-image: url(../images/paral.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 80% 22%; */
     }
 
     .wrapper {
@@ -3605,6 +3633,12 @@ a {
 
 
 
+/* end of home page */
+
+
+
+
+/* start of text page */
 
 
 
@@ -3613,6 +3647,48 @@ a {
 
 
 
+
+
+
+
+
+
+
+/* Under Construction for all linked pages  */
+.content-div{
+    width: 100%;
+    height: 1000px;
+}
+
+
+
+
+
+
+/* styling for page-new start */
+.container-div{
+    width: 100%;
+    height: 1200px;
+    background-image: url(../images/uc.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* styling for page-new end  */
 
 
 

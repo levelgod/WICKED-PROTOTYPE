@@ -811,20 +811,6 @@ $(function() {
 
  	}
  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     // mobile social section
 
     
@@ -930,3 +916,12 @@ var currentScrollPos = window.pageYOffset;
   prevScrollpos = currentScrollPos;
 }
 
+
+
+
+// navigation sharing test file 
+
+
+
+
+// navigation test end

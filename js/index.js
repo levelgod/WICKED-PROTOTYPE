@@ -919,11 +919,17 @@ var currentScrollPos = window.pageYOffset;
 
 
 
-// navigation sharing test file 
+// navigation sharing file 
 
 $(function(){
   $("#nav-placeholder").load("nav.html");
 });
 
 
-// navigation test end
+// navigation end
+
+// footer sharing file 
+$(function(){
+  $("#footer-placeholder").load("footer.html");
+});
+// footer sharing file end

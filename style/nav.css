@@ -67,17 +67,6 @@ button {
         margin-top: 4px;
     }
 
-    .pc-sgnup p a {
-        color: #111;
-        font-size: 0.72rem;
-        font-weight: 400;
-        padding: 4px 8px;
-    }
-
-    .pc-sgnup p a:hover {
-        color: #8d8d8d;
-    }
-
     /* navigation bar for pc */
 
     

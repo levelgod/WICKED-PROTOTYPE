@@ -1576,14 +1576,54 @@ hr {
     display: inline-block;
 }
 
+/* support section dropdown styling  */
 
 
 
+.dropbtn {
+    color: white;
+    border: none;
+    z-index: 9999;
+}
+.dropbtn p{
+    font-size: 0.72rem;
+}
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
 
+.dropdown-content {
+    position: absolute;
+    top: 18px;
+    right: 0px;
+    background-color: #f1f1f1;
+    width: 240px;
+    height: 300px;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    opacity: 0%;
+    transition: all 0.4s ease;
+    visibility: hidden;
+}
 
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
 
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
 
+.dropdown:hover .dropdown-content {
+    opacity: 60%;
+    top: 25px;
+    visibility: visible;
+}
     /* navigation bar for pc */
 
     .pc_logm_div {

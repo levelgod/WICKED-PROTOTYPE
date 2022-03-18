@@ -1534,7 +1534,7 @@ hr {
         /* Stay in place */
         z-index: 9999;
         /* Sit on top */
-        padding-top: 100px;
+        padding-top: 200px;
         /* Location of the box */
         left: 0;
         top: 0;
@@ -1552,6 +1552,7 @@ hr {
     .modal-content {
         background-color: #fefefe;
         margin: auto;
+        border-radius: 2px;
         height: 489px;
         width: 436px;  
          
@@ -1561,19 +1562,114 @@ hr {
     .close {
         color: #aaaaaa;
         float: right;
-        font-size: 28px;
+        font-size: 32px;
+        font-weight: bolder;
         font-weight: bold;
     }
 
     .close:hover,
     .close:focus {
         color: #000;
+        
         text-decoration: none;
         cursor: pointer;
     }
 
 #myBtn{
     display: inline-block;
+}
+.modallogo{
+    width: 8%;
+    margin: auto;
+    padding-top: 26px;
+}
+.modalheadtext{
+    padding-top: 26px;
+}
+.modalheadtext h2{
+font-family: 'Be Vietnam Pro',sans-serif;
+text-align: center;
+font-weight: 600;
+font-size: 18px;
+}
+.loginspace{
+    width: 300px;
+    margin: auto;
+    padding-top: 26px;
+}
+
+input[type=text],
+input[type=password] {
+    width: 254px;
+    padding: 12px 20px;
+    border-radius: 2px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.form-group {
+    display: block;
+    margin-bottom: 15px;
+    padding-top: 26px;
+}
+
+.form-group input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+}
+
+.form-group label {
+    position: relative;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-family: 'Be Vietnam Pro',
+    sans-serif;
+}
+
+.form-group label:before {
+    content: '';
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 1px solid #a5a5a5;
+    border-radius: 2px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.form-group input:checked+label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 9px;
+    width: 6px;
+    height: 14px;
+    border: solid #ff4800;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+
+.signin_btn {
+    background-color: black;
+    border: none;
+    text-align: center;
+    color: white;
+    width: 296px;
+    height: 44px;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 /* support section dropdown styling  */

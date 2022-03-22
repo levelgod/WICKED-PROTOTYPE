@@ -225,7 +225,7 @@ button {
 
 .headerm .menum>ul>li .sub-menum.mega-menu-column-4m>.list-itemm .titlem {
     font-size: 16px;
-    color: #000000;
+    color: #ff4800;
     font-weight: 500;
     line-height: 1;
     padding: 10px 0;
@@ -386,8 +386,9 @@ button {
 
 .headerm .menum .mobile-menu-headm .current-menu-titlem {
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 400;
     color: #000000;
+    font-family: 'Tomorrow',sans-serif;
 }
 
 .headerm .menum .mobile-menu-headm .mobile-menu-closem {
@@ -1350,7 +1351,6 @@ hr {
 .footer_div_in ul li a {
     color: #fff;
     font-size: 0.7rem;
-    font-family: 'Be Vietnam Pro', sans-serif;
     font-weight: normal;
 }
 
@@ -1381,17 +1381,16 @@ hr {
 }
 
 .ind_logo p {
-    font-family: 'Be Vietnam Pro', sans-serif;
     font-weight: lighter;
     color: #fff;
-    font-size: 1.08rem;
+    font-size: 0.8rem;
     line-height: 1;
     margin-left: 6px;
 }
 
 .ind_logo img {
-    width: 30px;
-    height: 20px;
+    width: 15px;
+    height: 10px;
 }
 
 .policy-links {
@@ -1401,9 +1400,8 @@ hr {
 
 .policy-links ul li a {
     color: #c1c1c1;
-    font-family: 'Be Vietnam Pro', sans-serif;
-    font-size: 0.6rem;
-    font-weight: lighter;
+    font-size: 0.8rem;
+    font-weight: 200;
 }
 
 .copy-right {
@@ -1413,11 +1411,10 @@ hr {
 }
 
 .copy-right p {
-    font-family: 'Be Vietnam Pro', sans-serif;
     font-weight: lighter;
     text-align: center;
     color: #ffffff;
-    font-size: 9px;
+    font-size: 10px;
 }
 
 .pc_parent {
@@ -1717,15 +1714,14 @@ input[type=password] {
     color: black;
     text-decoration: none;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 200;
     padding: 4px 8px;
     text-align: left;
     display: block;
 }
 
 .dropdown-content a:hover {
-    color: #fff;
-    background-color: #9c9c9c;
+    font-weight: 400;
 }
 
 .dropdown:hover .dropdown-content {
@@ -1926,12 +1922,17 @@ a {
 
 .header .menu>ul>li .sub-menu>ul>li>a {
     display: inline-block;
-    padding: 10px 0;
-    font-size: 15px;
+    padding: 6px 0;
+    font-size: 14px;
+    font-weight: 300;
     color: #555555;
     transition: color 0.1s ease;
     text-decoration: none;
     text-transform: capitalize;
+}
+.header .menu>ul>li .sub-menu>ul>li>a:hover{
+    text-decoration: underline;
+    font-weight: 500;
 }
 
 .header .menu>ul>li .single-column-menu {
@@ -1973,7 +1974,7 @@ a {
 
 .header .menu>ul>li .sub-menu.mega-menu-column-4>.list-item .title {
     font-size: 1.2rem;
-    color: #000000;
+    color: #ff4800;
     font-weight: 400;
     line-height: 1;
     padding: 10px 0;

@@ -77,41 +77,14 @@ button {
 }
 /* custom scroll bar end  */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#mheader{
+    width: 100%;
+    height: auto;
+    position: fixed;
+    display: block;
+    z-index: 2;
+    transition: top 0.35s;
+}
 /* mobile logo and navigation bar  */
 
 .rowm {
@@ -3609,8 +3582,8 @@ a {
     }
 
     .pc-details a:hover {
-        color: #ffffff;
-        transition: 0.15s;
+        color: #ff4800;
+        font-weight: 400;
     }
 
     .ind-n-policy-wrap {

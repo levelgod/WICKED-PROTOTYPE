@@ -27,7 +27,7 @@ h4 {
     color: #000000
 }
 
-h5 {
+h5,h2 {
     font-family: 'Tomorrow',
     sans-serif;
     font-size: 1.5625rem;
@@ -2189,7 +2189,6 @@ a {
     }
 
     .pc-trend {
-        display: flex;
         padding-bottom: 30px;
     }
 
@@ -2320,6 +2319,140 @@ a {
     .fadeIn-right {
         left: 80%;
     }
+
+/* above styles are inactive  */
+
+/* pc trending active slider section start  */
+
+.slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider__wrapper {
+    display: flex;
+    transition: transform 0.6s ease;
+}
+
+.slider__item {
+    flex: 0 0 25%;
+    max-width: 18%;
+    margin-bottom: 30px;
+}
+
+.slider__control {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    color: #fff;
+    text-align: center;
+    opacity: 0.5;
+    height: 50px;
+    transform: translateY(-25%);
+    background: #ff480080;
+}
+
+.slider__control:hover,
+.slider__control:focus {
+    color: #fff;
+    text-decoration: none;
+    outline: 0;
+    opacity: .9;
+}
+
+.slider__control_left {
+    left: 0;
+}
+
+.slider__control_right {
+    right: 0;
+}
+
+.slider__control::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.slider__control_left::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.slider__control_right::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.trendingcont{
+    height: 420px;
+    width: 242px;
+}
+.tdsimg1{
+    width: 100%;
+    height: 300px;
+}
+
+
+.trendsec1 h2{
+    font-size: 1rem !important;
+    text-align: center;
+     user-select: none;
+     margin: 15px 0 15px 0;
+}
+.tdsbtn{
+    width: 120px;
+    height: 50px;
+    background-color: #000;
+    margin: auto;
+}
+.tdsbtn p{
+    padding-top: 15px;
+}
+
+/* pc trending active slider section end  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     /* start of ad-sec */
     .pc-ad-sec {
@@ -2830,7 +2963,7 @@ a {
     /* start of cres style */
     .cres-peace-sec {
         display: flex;
-        height: 43.604vw;
+        height: 38.5vw;
         width: 100%;
         justify-content: space-evenly;
     }
@@ -2866,11 +2999,12 @@ a {
 
     .cres-text p {
         text-align: center;
-        padding: 1ch 0 1ch 0;
         font-size: 1.625rem;
         font-weight: 400;
         color: #181818;
     }
+
+
 
     .peace-cont {
         width: 48.438vw;
@@ -2904,7 +3038,7 @@ a {
     .trad-exc-sec {
         display: flex;
         width: 100%;
-        height: 43.604vw;
+        height: 38.5vw;
         justify-content: space-evenly;
         padding-top: 30px;
     }
@@ -2975,7 +3109,7 @@ a {
     .elyg-sec {
         display: flex;
         width: 100%;
-        height: 43.604vw;
+        height: 38.5vw;
         justify-content: space-evenly;
         padding-top: 30px;
     }
@@ -3403,13 +3537,13 @@ a {
 
     .fan-img {
         overflow: hidden;
-        width: 240px;
-        height: 240px;
+        width: 230px;
+        height: 210px;
         position: relative;
     }
 
     .fan-img img {
-        width: 240px;
+        width: 100%;
         margin-top: 30px;
         transform: scale(1.2);
         -webkit-transition: .3s ease-in-out;
@@ -3425,7 +3559,7 @@ a {
         position: absolute;
         bottom: -242px;
         transition: 0.3s;
-        width: 260px;
+        width: 230px;
         height: 165px;
         margin-top: 20px;
     }
@@ -3437,8 +3571,8 @@ a {
     }
 
     .fan-links {
-        background: #ff48009c;
-        padding: 20px 0 20px 0;
+        background: #ff480052;
+        padding: 10px 0 10px 0;
     }
 
     .fan-hover-div p {
@@ -3776,6 +3910,9 @@ a {
 
 
 /* styling for page-new end  */
+
+
+/* NEW arrivals page styling */
 
 
 

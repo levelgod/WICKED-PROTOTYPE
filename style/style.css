@@ -1531,9 +1531,9 @@ hr {
     .modal-content {
         background-color: #fefefe;
         margin: auto;
-        border-radius: 2px;
-        height: 489px;
-        width: 436px;  
+        border-radius: 0.5px;
+        height: 420px;
+        width: 340px;  
          
     }
 
@@ -1563,7 +1563,7 @@ hr {
     padding-top: 26px;
 }
 .modalheadtext{
-    padding-top: 26px;
+    padding-top: 4px;
 }
 .modalheadtext h2{
     font-family: 'Tomorrow',sans-serif;
@@ -1839,6 +1839,30 @@ a {
     height: 46px;
     padding: 2px 0 2px 0;
 }
+.logo img:hover{
+    
+    animation: shake 0.8s;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0)
+    }
+
+    25% {
+        transform: translateX(25px);
+    }
+
+    50% {
+        transform: translateX(-25px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+
 
 .header .item-center {
     flex: 0 0 66%;
@@ -2984,8 +3008,8 @@ a {
         height: 35.521vw;
         -webkit-transform: scale(1);
         transform: scale(1);
-        -webkit-transition: .3s ease-in-out;
-        transition: .3s ease-in-out;
+        -webkit-transition: .1s ease-in-out;
+        transition: .1s ease-in-out;
         -webkit-filter: grayscale(60%);
         filter: grayscale(60%)
     }
@@ -3022,8 +3046,8 @@ a {
         height: 35.521vw;
         -webkit-transform: scale(1);
         transform: scale(1);
-        -webkit-transition: .3s ease-in-out;
-        transition: .3s ease-in-out;
+        -webkit-transition: .1s ease-in-out;
+        transition: .1s ease-in-out;
         -webkit-filter: grayscale(60%);
         filter: grayscale(60%)
     }
@@ -3059,8 +3083,8 @@ a {
         height: 35.521vw;
         -webkit-transform: scale(1);
         transform: scale(1);
-        -webkit-transition: .3s ease-in-out;
-        transition: .3s ease-in-out;
+        -webkit-transition: .1s ease-in-out;
+        transition: .1s ease-in-out;
         -webkit-filter: grayscale(60%);
         filter: grayscale(60%);
     }
@@ -3088,8 +3112,8 @@ a {
         height: 35.521vw;
         -webkit-transform: scale(1);
         transform: scale(1);
-        -webkit-transition: .3s ease-in-out;
-        transition: .3s ease-in-out;
+        -webkit-transition: .1s ease-in-out;
+        transition: .1s ease-in-out;
         -webkit-filter: grayscale(60%);
         filter: grayscale(60%);
     }
@@ -3130,8 +3154,8 @@ a {
         height: 35.521vw;
         -webkit-transform: scale(1);
         transform: scale(1);
-        -webkit-transition: .3s ease-in-out;
-        transition: .3s ease-in-out;
+        -webkit-transition: .1s ease-in-out;
+        transition: .1s ease-in-out;
         -webkit-filter: grayscale(60%);
         filter: grayscale(60%);
     }
@@ -3159,8 +3183,8 @@ a {
         height: 35.521vw;
         -webkit-transform: scale(1);
         transform: scale(1);
-        -webkit-transition: .3s ease-in-out;
-        transition: .3s ease-in-out;
+        -webkit-transition: .1s ease-in-out;
+        transition: .1s ease-in-out;
         -webkit-filter: grayscale(60%);
         filter: grayscale(60%);
     }

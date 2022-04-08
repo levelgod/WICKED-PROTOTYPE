@@ -1840,26 +1840,8 @@ a {
     padding: 2px 0 2px 0;
 }
 .logo img:hover{
-    
-    animation: shake 0.8s;
-}
-
-@keyframes shake {
-    0% {
-        transform: translateX(0)
-    }
-
-    25% {
-        transform: translateX(25px);
-    }
-
-    50% {
-        transform: translateX(-25px);
-    }
-
-    100% {
-        transform: translateX(0px);
-    }
+    transform: scale(0.97);
+    transition: 0.08s ease all;
 }
 
 
@@ -2376,7 +2358,7 @@ a {
     opacity: 0.5;
     height: 50px;
     transform: translateY(-25%);
-    background: #ff480080;
+    background: #000000;
 }
 
 .slider__control:hover,
@@ -3918,26 +3900,58 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* styling for page-new end  */
 
 
-/* NEW arrivals page styling */
+/* mens category page styling */
+#nav-placeholder{
+    padding-bottom: 79px;
+}
 
+
+.mensposter img{
+    width: 100%;
+    height: auto;
+}
+
+.menasec h4{
+    text-align: center;
+    padding: 12px 0 16px 0;
+    font-size: 1.1rem;
+}
+/* Mens best seller slider section  */
+
+.menbscont{
+    display: flex;
+    justify-content: space-evenly;
+}
+.menbs1{
+    width: 23.833vw;
+    height: 27.104vw;
+    background-color: #0026ff2a;
+}
+.menbsimga{
+    width: 23.833vw;
+    height: 23vw;
+    background-color: yellow;
+}
+.menbstxta{
+    display: flex;
+    justify-content: space-between;
+}
+.menbsdescription{
+    margin-top: 15px;
+}
+
+
+/* Mens best seller slider section end */
+
+
+
+
+
+
+/* mens category page styling end */
 
 
 

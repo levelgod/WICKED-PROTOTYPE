@@ -55,7 +55,7 @@ button {
 
     .nav-link::before {
         transition: 300ms;
-        height: 4px;
+        height: 1.6px;
         content: "";
         position: absolute;
         background-color: #ff4800;
@@ -225,8 +225,5 @@ a {
     width: 100%;
     vertical-align: middle;
     margin-top: 10px;
-}
-.item-right a:hover{
-    color: #ff4800;
 }/* styling only for navigation bar head  */
 }

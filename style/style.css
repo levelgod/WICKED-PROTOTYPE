@@ -2585,90 +2585,72 @@ a {
     .menshbtn {
         position: relative;
     }
-
     .menshbtntext {
         position: absolute;
         top: 100px;
         opacity: 0;
     }
-
     .menshbtntext p a {
         color: #fff;
         font-size: 1rem;
         font-weight: bold;
     }
-
     .mensimgb {
         transition: 0.2s;
-    }
-
-    .adimgb:hover .mensimgb {
-        transform: scale(1.2);
-        filter: brightness(40%);
-    }
-
-    .menshbtntext {
-        transition: 0.8s;
-    }
-
-    .adimgb:hover .menshbtntext {
-        opacity: 1;
-        margin-left: 50px;
-    }
-
-    .menshbtntext p a:hover {
-        background-color: #ff4800;
-    }
-
-    .adimgc {
-        display: inline-block;
-        top: 164px;
-        left: 240px;
-        position: absolute;
-    }
-
-    .menshbtn {
-        position: relative;
-    }
-
-    .menshbtntext {
-        position: absolute;
-        top: 100px;
-        opacity: 0;
-    }
-
-    .menshbtntext p a {
-        color: #fff;
-        font-size: 1.05rem;
-        font-weight: bold;
-    }
-
-    .mensimgc {
-        transition: 0.2s;
-    }
-
-    .adimgc:hover .mensimgc {
-        transform: scale(1.2);
-        filter: brightness(40%);
-    }
-
-    .menshbtntext {
-        transition: 0.8s;
-    }
-
-    .mensimgc {
-        transition: 0.2s;
-    }
-
-    .adimgc:hover .menshbtntext {
-        opacity: 1;
-        margin-left: 50px;
-    }
-
-    .menshbtntext p a:hover {
-        background-color: #ff4800;
-    }
-
+}
+.adimgb:hover .mensimgb {
+transform: scale(1.2);
+filter: brightness(40%);
+}
+.menshbtntext {
+transition: 0.8s;
+}
+.adimgb:hover .menshbtntext {
+opacity: 1;
+margin-left: 50px;
+}
+.menshbtntext p a:hover {
+background-color: #ff4800;
+}
+.adimgc {
+display: inline-block;
+top: 164px;
+left: 240px;
+position: absolute;
+}
+.menshbtn {
+position: relative;
+}
+.menshbtntext {
+position: absolute;
+top: 100px;
+opacity: 0;
+}
+.menshbtntext p a {
+color: #fff;
+font-size: 1.05rem;
+font-weight: bold;
+}
+.mensimgc {
+transition: 0.2s;
+}
+.adimgc:hover .mensimgc {
+transform: scale(1.2);
+filter: brightness(40%);
+}
+.menshbtntext {
+transition: 0.8s;
+}
+.mensimgc {
+transition: 0.2s;
+}
+.adimgc:hover .menshbtntext {
+opacity: 1;
+margin-left: 50px;
+}
+.menshbtntext p a:hover {
+background-color: #ff4800;
+}
     /* end of ad-sec */
 
 
@@ -2713,20 +2695,18 @@ a {
 
 
     /* start of shoe text sec */
-    .pcshoe-div {
-        width: 100%;
-        height: 32.188vw;
-        background-image: url(../images/shoesec.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-
-    }
-
-    .pc-shoeline {
-        width: 100%;
-        height: 1px;
-        background-color: #dfdfdf;
-    }
+.pcshoe-div {
+width: 100%;
+height: 32.188vw;
+background-image: url(../images/shoesec.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+}
+.pc-shoeline {
+width: 100%;
+height: 1px;
+background-color: #dfdfdf;
+}
 
     /* end of shoetext */
 
@@ -2734,14 +2714,14 @@ a {
 
     /* pc-wikoff-div */
 
-    .pc-wikoff-div {
-        width: 100%;
-        height: auto;
-        text-align: center;
-        font-size: 0.875rem;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
+.pc-wikoff-div {
+width: 100%;
+height: auto;
+text-align: center;
+font-size: 0.875rem;
+margin-top: 30px;
+margin-bottom: 30px;
+}
 
     .wikp p {
         font-size: 1.625rem;
@@ -3885,11 +3865,11 @@ a {
 .menbscont{
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 30px;
 }
 .menbs1{
     width: 23.833vw;
     height: 27.104vw;
-    background-color: #0026ff2a;
 }
 .menbsimga{
     width: 23.833vw;
@@ -3902,6 +3882,10 @@ a {
 }
 .menbsdescription{
     margin-top: 15px;
+}
+.menbsdescription a{
+    color: #000;
+    font-size: 0.9rem;
 }
 
 
